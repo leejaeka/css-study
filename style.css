@@ -1,19 +1,198 @@
-h1{
+h1 {
     color: green
 }
-body{
-    background-color:#808080;
+
+body {
+    background-color: #f4f4f4;
+    color: #555555;
     font-family: Arial, Arial, Helvetica, sans-serif;
-    font-size:12px;
-    font-weight:normal;
+    font-size: 12px;
+    font-weight: normal;
     /*font: normal 16px Arial, Helvetica, sans-serif;
         this is same as the top
     */
-    line-height:1.6em; /* more/less space in between lines can use px instead of em*/
-    margin:0;
-
+    line-height: 2em; /* more/less space in between lines can use px instead of em*/
+    margin: 0;
 }
-.box-1{
-    background-color:#4cff00;
-    color:#fff;
+
+.container {
+    width: 80%; /*if percentage, when tab shrunk it will shift shape*/
+    margin: auto; /*auto margin on */
+}
+
+.box-1 {
+    background-color: #333;
+    color: #fff;
+    border-right: 5px red solid;
+    border-left: 5px red solid; /* same as border: 4px red solid;*/
+    border-top: 5px red solid;
+    border-bottom: 5px red solid;
+    border-bottom-width: 10px;
+    border-top-width: 10px;
+    border-style: dotted;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+    .box-1 h1 {
+        font-family: 'Times New Roman';
+        text-align: center;
+        font-weight: 800;
+        font-style: italic;
+        text-decoration: underline;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        word-spacing: 1em;
+    }
+
+.box-2 {
+    border: 3px dotted #ccc;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+a { /*APPLIES TO ANY LINKS IN THE FILE*/
+    text-decoration: none;
+    color: #000;
+}
+
+    a:hover { /*WHEN MOUSE IS HOVERED*/
+        color: red;
+    }
+
+    a:active {
+        color: purple;
+    }
+
+/*a:visited{
+    color:yellow;
+}*/
+
+.clr {
+    clear:both;
+}
+
+.categories {
+    border: 1px #ccc solid;
+    padding: 10px;
+    border-radius: 15px; /*circular vertex*/
+}
+
+    .categories h2 {
+        text-align: center;
+    }
+
+    .categories ul {
+        padding: 1%;
+        list-style: none;
+    }
+
+    .categories li {
+        padding-bottom: 8px;
+        border-bottom: dotted 1px #333;
+        list-style-image: url('../css-study/images/checkmark.jpg');
+    }
+
+.my-form {
+    padding: 20px;
+}
+
+    .my-form label {
+        display: block;
+    }
+
+    .my-form input[type="text"], .my-form textarea {
+        padding: 8px;
+        width: 100%;
+    }
+
+.button:hover {
+    color: purple;
+    background-color: white;
+}
+
+.button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+}
+
+.form-group {
+    padding-bottom: 15px;
+}
+
+    .form-group input {
+        padding: 8px;
+        width: 100%;
+    }
+
+.block { /*Boxes */
+    float: left;
+    width: 33.3%;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-sizing: border-box; /*Makes sidebyside*/
+}
+
+.p-box{
+    width:800px;
+    height:500px;
+    border:1px solid #000;
+    margin-top:30px;
+    position:relative;
+    background-image:url('../css-study/images/elsa.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
+
+    /*ABSOLUTE POSITION*/
+    .p-box h1{
+        position:absolute;
+        top:40px;
+        left:200px;
+    }
+
+    .p-box h2{
+        position: absolute;
+        bottom: 40px;
+        right: 100px;
+    }
+
+/*FLOATING LEFT AND RIGHT*/
+
+.fix-me{
+    position:fixed;
+    bottom:100px;
+}
+
+.my-list li:first-child{
+    background: red;
+}
+
+.my-list li:last-child {
+    background: blue;
+}
+
+.my-list li:nth-child(even){
+    background: aqua;
+}
+
+#main-block {
+    float: left;
+    width: 70%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #333;
+    color: #fff;
+}
+
+#side {
+    float: right;
+    width: 30%;
+    padding: 15px;
+    box-sizing: border-box;
+    color:red;
+    background-color:#000;
 }
