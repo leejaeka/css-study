@@ -22,7 +22,7 @@
     }
 
     /*HORIZONTAL SPACING*/
-    .container-2 {
+    .container-2, .container-3 {
         display:flex;
         justify-content:space-between;
         
@@ -36,6 +36,9 @@
     }
     .container-2-box{
          flex-basis:27%;
+    }
+    .container-3-box{
+
     }
 }
 
