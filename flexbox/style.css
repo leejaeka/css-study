@@ -1,26 +1,44 @@
+/*COLUMNS WILL GO AWAY IF U MAKE SCREEN TIGHTER*/
 @media(min-width:468px) {
+
+    /*PLAYING WITH THREE BOXES*/
     .container-1 {
         display: flex;
+        align-items:center;
         /*
+            HEIGHT
       align-items:flex-start;
       align-items:flex-end;
       align-items:center;
+     default is align-items:stretch;
       
+            goes back to column
       flex-direction:column;
       */
     }
+    .container-1 div, .container-2 div, .container-3 div{
+        border:1px #ccc solid;
+        padding:10px;
+    }
 
+    /*HORIZONTAL SPACING*/
     .container-2 {
-        display: flex;
+        display:flex;
+        justify-content:space-between;
+        
         /*
+            //default
       justify-content:flex-start;
       justify-content:flex-end;
       justify-content:center;
       justify-content:space-around;
-      */
-        justify-content: space-between;
+      justify-content: space-between;*/ 
+    }
+    .container-2-box{
+         flex-basis:27%;
     }
 }
+
 
 .container-3 {
     display: flex;
@@ -34,18 +52,18 @@
     }
 
 .box-1 {
-    flex: 2;
-    order: 2;
+    flex:2;
+    order:2;
 }
 
 .box-2 {
-    flex: 1;
-    order: 1;
+    flex:1;
+    order:1;
 }
 
 .box-3 {
-    flex: 1;
-    order: 3;
+    flex:2;
+    order:3;
 }
 
 .container-2-box {
